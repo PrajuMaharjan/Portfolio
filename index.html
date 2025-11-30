@@ -16,14 +16,11 @@
             <li><a href="#bio">About Me</a></li>
             <li><a href="#edu">Education History</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#cf">Contact Me</a></ll>
+            <li><a href="#cf">Contact Me</a></li>
         </ul>
         </nav>
     </header>
     <main>
-<!--          <video id="video-background" src="video/3125427-uhd_3840_2160_25fps.mp4" preload="auto" muted playsinline>
- Your browser does not support the video tag.
- </video> -->
     <video autoplay loop muted id="video-background" src="video/3125427-uhd_3840_2160_25fps.mp4">
  Your browser does not support the video tag.
  </video>
@@ -62,14 +59,14 @@
         </div>
         <div id="cf">
         <h2>Contact Me</h2>
-        <form>
-            <label for="Name:"><b>Name:</b></label>
-            <input type="text" placeholder="Name" required>    
+        <form onsubmit="form_checker(event)">
+            <label for="Name:" ><b>Name:</b></label>
+            <input type="text" id="Name"placeholder="Name">    
             <label for="Email:"><b>Email:</b></label>
-            <input type="email" placeholder="Email" required>    
+            <input type="email" id="Email"placeholder="Email"> 
             <label for="Message:"><b>Message:</b></label>
-            <textarea placeholder="Message" required rows=6></textarea>
-            <input type="submit" value="Submit">    
+            <textarea placeholder="Message" id="Message" rows=6></textarea>
+            <input type="submit" value="Submit" id="Submit">
         </form>
         </div>
     </main>
