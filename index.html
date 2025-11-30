@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <h1> Welcome to Praju Maharjan's Portfolio</h1>
-        <nav>
+        <div id="menu-toggle" onclick="shownavbar()">&#9776</div>
+        <nav id = "navigation">
         <ul>
-            <li><a href="bio">About Me</a></li>
-            <li><a href="edu">Education History</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="cf">Contact Me</a></ll>
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#edu">Education History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#cf">Contact Me</a></ll>
         </ul>
         </nav>
     </header>
     <main>
+<!--          <video id="video-background" src="video/3125427-uhd_3840_2160_25fps.mp4" preload="auto" muted playsinline>
+ Your browser does not support the video tag.
+ </video> -->
+    <video autoplay loop muted id="video-background" src="video/3125427-uhd_3840_2160_25fps.mp4">
+ Your browser does not support the video tag.
+ </video>
         <div id="bio">
         <h2>About Me</h2>
         <img src="images/20240121_125936.jpg">
